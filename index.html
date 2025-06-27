@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow - Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Focus Flow</h1>
+        <div class="task-section">
+            <input type="text" placeholder="Enter a task..." id="taskInput">
+            <button onclick="addTask()">ADD</button>
+            <ul id="taskList"></ul>
+        </div>
+        <div class="timer-section">
+            <h2>Pomodoro Timer</h2>
+            <div id="timer">25:00</div>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+        <div class="footer">
+            <p>Promodoros Completed: <span id="cycles">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
